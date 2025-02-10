@@ -32,6 +32,10 @@ draw.polygon([(600, 150), (650, 150), (625, 200)], outline=black, fill=red)
 # Icon 3: Square
 draw.rectangle([700, 50, 750, 100], outline=black, fill=red)
 
+icon = Image.open('icon.png')
+image.paste(icon, (50, 400))
+
+
 # Save the image as a black BMP file
 image_black = image.copy()
 draw_black = ImageDraw.Draw(image_black)
